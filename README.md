@@ -1,8 +1,9 @@
 # iaeo.me
 ------------------
-Simple URL Shortener
 
-Adapted from [bauripalash's simpleurlshortener] (https://github.com/bauripalash/simpleurlshortener)
+### Simple URL Shortener
+
+Adapted from [bauripalash's simpleurlshortener](https://github.com/bauripalash/simpleurlshortener/)
 
 Tools using :
 + jsonstore.io
@@ -16,4 +17,4 @@ I just add :
 + RegEx for identify url (http/https/ftp)
 + Custom link 
 
-For demo : [ioeo.me] (http://ioeo.me)
+For demo : [ioeo.me](http://ioeo.me/)
