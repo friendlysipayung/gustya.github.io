@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>URL SHORTENER</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="https://getbootstrap.com/docs/4.0/examples/floating-labels/floating-labels.css" rel="stylesheet">
+	
+	<style type="text/css">
+            
+            body {
+                background: linear-gradient(132deg, #3498db, #1abc9c);
+                background-size: 400% 400%;
+                animation: BackgroundGradient 30s ease infinite;
+            }
+            
+            @keyframes BackgroundGradient {
+                0% {background-position: 0% 50%;}
+                50% {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
+            }
+        </style>
+</head>
+
+<body>
+	<form class="form-signin">
+		<div class="text-center mb-4">
+			<b><h1 class="h3 mb-3 font-weight-normal">URL SHORTENER</h1></b>
+		</div>
+
+		<div class="form-label-group mb-2">
+			<input type="text" id="urlinput" class="form-control" placeholder="Long URL" required autofocus>
+			<label for="urlinput">Long URL</label>
+		</div>
+		<script>
+			function showAdvance(){
+			       var t = "<div class='input-group mb-3'><div class='input-group-prepend'><span class='input-group-text' id='basic-addon3'>http://frie.me/in/#</span></div><input type='text' class='form-control' id='advurl' aria-describedby='basic-addon3' placeholder='blabla' required autofocus></div>";
+			       showDiv("advanced");
+			       showMsq("advanced",t);
+			}
+		</script>
+		
+		<button type="button" class="btn btn-link" id="advance" onclick="showAdvance()">advanced</button>
+		<div class="form-label-group mb-2">
+			<div id="advanced" style="display:none; opacity: 75;">
+				<p id="advanced"></p>
+			</div>
+		</div>
+		
+		<button class="btn btn-lg btn-primary btn-block mb-3" type="button" onclick="shorturl()">OK!</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="main.js"></script>
+
+		<div class="form-label-group mb-3">
+			<div class="alert alert-danger" id="none" style="opacity: 0;">
+				<br>
+			</div>
+			<div class="alert alert-danger" id="alert" style="display:none;">
+				<p id="alert"> </p>
+			</div>
+			<div class="alert alert-success" id="uri" style="display:none;">
+				<p id="uri"> </p>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
