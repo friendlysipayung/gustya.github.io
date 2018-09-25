@@ -1,4 +1,4 @@
-var endpoint = "https://www.jsonstore.io/7cfceed0821a48435866425e59fa3b4ef5ce35283f852e665ff86854ba2a7991";
+var endpoint = "https://www.jsonstore.io/3ddb5d8f291ce62962a86fc6ba8dd8bf20bccab748f0075e12d7b03539effa13";
 
 function refresh(){
     setTimeout(function () {
